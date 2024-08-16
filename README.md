@@ -13,3 +13,5 @@ span{
     color: var(--ral3033);
 }
 ```
+## data collection
+in the samples folder you will find a data collection of the tones in different color spaces. the data collections are packed in different formats. html to view the colors, csv and json as a pure data collection, css for use in your website
