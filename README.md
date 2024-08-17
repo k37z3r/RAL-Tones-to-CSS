@@ -35,7 +35,19 @@ span{
 }
 ```
 **OR**
-use at your html for setup background-color
+
+
+use direct at your html-file with attribute class
+* download [css/ral-tones.min.css](css/ral-tones.min.css)
+* download [css/c-ral-tones.min.css](css/c-ral-tones.min.css)
+* download [css/bg-ral-tones.min.css](css/bg-ral-tones.min.css)
+* put the downloaded files into {your-css-dir}
+* open your html-file and add between ```<head>``` and ```</head>```
+```html
+<link rel="stylesheet" href="{your-css-dir}/c-ral-tones.css">
+<link rel="stylesheet" href="{your-css-dir}/bg-ral-tones.css">
+```
+now you can use the ral tones at your css file for define background-color or text-color by using classes
 ```html
 <div class="bg2008">this div has the background color ral2008</div>
 ```
