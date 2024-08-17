@@ -5,7 +5,7 @@ a list of color tones and the corresponding HEX RGB HSL HWB CMYK NCOL XYZ L*a*b*
 The hex codes used in this Repo are only approximations of the RAL tones.
 you can look up which ral tones are supported in the [csv](csv) / [html](html) / [css](css) / [json](json) folders. the data sets are identical and only adapted to the corresponding file format
 
-## howto use
+## howto use at CSS
 * open your css
 * write at the top of your file
 ```css
@@ -34,18 +34,17 @@ span{
     color: var(--ral3033);
 }
 ```
-**OR**
 
 
-use direct at your html-file with attribute class
+## howto use direct at HTML
 * download [css/ral-tones.min.css](css/ral-tones.min.css)
 * download [css/c-ral-tones.min.css](css/c-ral-tones.min.css)
 * download [css/bg-ral-tones.min.css](css/bg-ral-tones.min.css)
 * put the downloaded files into {your-css-dir}
 * open your html-file and add between ```<head>``` and ```</head>```
 ```html
-<link rel="stylesheet" href="{your-css-dir}/c-ral-tones.css">
-<link rel="stylesheet" href="{your-css-dir}/bg-ral-tones.css">
+<link rel="stylesheet" href="{your-css-dir}/c-ral-tones.css"> <!-- for text-color -->
+<link rel="stylesheet" href="{your-css-dir}/bg-ral-tones.css"> <!-- for background-color -->
 ```
 now you can use the ral tones at your css file for define background-color or text-color by using classes
 ```html
