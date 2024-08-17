@@ -69,7 +69,7 @@ span{
 ```
 now you can use the ral tones at your css file for define background-color or text-color by using classes
 ```html
-<div class="bg2008">this div has the background color ral2008</div>
+<div class="bgcolor2008">this div has the background color ral2008</div>
 ```
 **OR**
 ```html
