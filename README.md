@@ -3,7 +3,12 @@
 ![GitHub Created At](https://img.shields.io/github/created-at/k37z3r/RAL-Tones-to-CSS)
 ![GitHub language count](https://img.shields.io/github/languages/count/k37z3r/RAL-Tones-to-CSS)
 ![GitHub top language](https://img.shields.io/github/languages/top/k37z3r/RAL-Tones-to-CSS)
-![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/k37z3r/RAL-Tones-to-CSS)
+![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/k37z3r/RAL-Tones-to-CSS/css?label=CSS-files)
+![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/k37z3r/RAL-Tones-to-CSS/json?label=JSON-files)
+![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/k37z3r/RAL-Tones-to-CSS/csv?label=CSV-files)
+![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/k37z3r/RAL-Tones-to-CSS/html?label=HTML-files)
+![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/k37z3r/RAL-Tones-to-CSS/php?label=PHP-files)
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/k37z3r/RAL-Tones-to-CSS)
 
 
