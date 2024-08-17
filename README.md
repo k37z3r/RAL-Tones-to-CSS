@@ -51,8 +51,21 @@ span{
   color: var(--ral3033);
 }
 ```
-
-
+## howto use with js
+* execute the first steps [howto use at CSS](README.md?plain=1#L25)
+use pure js
+```js
+const ral2008 = getComputedStyle(document.documentElement).getPropertyValue("--ral2008");
+document.getElementById('myDiv');
+myDiv.style.backgroundColor = ral2008;
+```
+**OR**
+use jquery
+```js
+$(document).ready(function() {
+  $('#myDiv').css('background-color', getComputedStyle(document.documentElement).getPropertyValue('--ral2008'));
+});
+```
 ## howto use direct at HTML
 * download [css/ral-tones.min.css](css/ral-tones.min.css)
 * download [css/c-ral-tones.min.css](css/c-ral-tones.min.css)
