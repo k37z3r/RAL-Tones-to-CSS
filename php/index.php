@@ -1,4 +1,7 @@
 <?php
+/*
+RAL-to-HEX-RGB-HSL-HWB-CMYK-NCOL-XYZ-Lab-xyY-LCh-HTML-CSS-Colorname © 2024 by Sven Minio is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+*/
 function hex2rgb($hex) {
     $hex = str_replace('#', '', $hex);
     if (strlen($hex) == 3) {
