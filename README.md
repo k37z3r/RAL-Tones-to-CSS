@@ -61,6 +61,7 @@ document.getElementById('myDiv');
 myDiv.style.backgroundColor = ral2008;
 ```
 **OR**
+
 use jquery
 ```js
 $(document).ready(function() {
