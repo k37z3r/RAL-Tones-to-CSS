@@ -3,6 +3,7 @@ a list of color tones and the corresponding HEX RGB HSL HWB CMYK NCOL XYZ L*a*b*
 
 ## infos
 The hex codes used in this Repo are only approximations of the RAL tones.
+you can look up which ral tones are supported in the [csv](csv) / [html](html) / [css](css) / [json](json) folders. the data sets are identical and only adapted to the corresponding file format
 
 ## howto use
 * open your css
@@ -24,12 +25,19 @@ The hex codes used in this Repo are only approximations of the RAL tones.
 ```css
 @import url("ral-tones.min.css");
 ```
+
+
 now you can use the ral tones at your css file e.g. as background-color, background, color. write at your css code like
 ```css
 span{
     background-color: var(--ral9005);
     color: var(--ral3033);
 }
+```
+**OR**
+write at your html code like
+```html
+<div class="bg2008">this div has the background color ral2008</div>
 ```
 ## licensing
 RAL-Tones-to-CSS © 2024 by Sven Minio is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
