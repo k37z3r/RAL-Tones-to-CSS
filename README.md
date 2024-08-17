@@ -62,6 +62,14 @@ myDiv.style.backgroundColor = ral2008;
 ```
 **OR**
 
+use [jBase](https://github.com/k37z3r/jBase)
+```js
+$(document).ready(function() {
+  $('#myDiv').css('background-color', getComputedStyle(document.documentElement).getPropertyValue('--ral2008'));
+});
+```
+**OR**
+
 use jquery
 ```js
 $(document).ready(function() {
