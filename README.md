@@ -52,7 +52,8 @@ span{
 }
 ```
 ## howto use with js
-* execute the first steps [howto use at CSS](README.md?plain=0#L25)
+* execute the first steps ([howto use at CSS](?plain=0#howto-use-at-css))
+
 use pure js
 ```js
 const ral2008 = getComputedStyle(document.documentElement).getPropertyValue("--ral2008");
