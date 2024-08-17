@@ -73,7 +73,7 @@ now you can use the ral tones at your css file for define background-color or te
 ```
 **OR**
 ```html
-<div class="c2008">this div has the text color ral2008</div>
+<div class="color2008">this div has the text color ral2008</div>
 ```
 **OR**
 ```html
@@ -81,7 +81,7 @@ now you can use the ral tones at your css file for define background-color or te
 ```
 **OR**
 ```html
-<input class="cc2008" value="this input has a carnet-color ral2008">
+<input class="caretcolor2008" value="this input has a carnet-color ral2008">
 ```
 **OR**
 you can also combine the classes like
