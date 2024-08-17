@@ -1,4 +1,14 @@
 # RAL-Tones-to-CSS
+![GitHub Last Commit](https://img.shields.io/github/last-commit/k37z3r/RAL-Tones-to-CSS)
+![GitHub Created At](https://img.shields.io/github/created-at/k37z3r/RAL-Tones-to-CSS)
+![GitHub language count](https://img.shields.io/github/languages/count/k37z3r/RAL-Tones-to-CSS)
+![GitHub top language](https://img.shields.io/github/languages/top/k37z3r/RAL-Tones-to-CSS)
+![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/k37z3r/RAL-Tones-to-CSS)
+![GitHub repo size](https://img.shields.io/github/repo-size/k37z3r/RAL-Tones-to-CSS)
+
+
+
+
 a list of color tones and the corresponding HEX RGB HSL HWB CMYK NCOL XYZ L*a*b* xyY LCh HTML/CSS Colorname
 
 ## infos
