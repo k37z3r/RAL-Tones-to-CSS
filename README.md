@@ -77,7 +77,7 @@ now you can use the ral tones at your css file for define background-color or te
 ```
 **OR**
 ```html
-<div class="bc2008" style="border-width:1px;border-style:solid;">this div has a border with color ral2008</div>
+<div class="bordercolor2008" style="border-width:1px;border-style:solid;">this div has a border with color ral2008</div>
 ```
 **OR**
 ```html
