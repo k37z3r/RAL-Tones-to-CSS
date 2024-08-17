@@ -35,7 +35,7 @@ span{
 }
 ```
 **OR**
-write at your html code like
+use at your html for setup background-color
 ```html
 <div class="bg2008">this div has the background color ral2008</div>
 ```
