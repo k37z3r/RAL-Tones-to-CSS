@@ -57,20 +57,31 @@ span{
 * download [css/ral-tones.min.css](css/ral-tones.min.css)
 * download [css/c-ral-tones.min.css](css/c-ral-tones.min.css)
 * download [css/bg-ral-tones.min.css](css/bg-ral-tones.min.css)
+* download [css/cc-ral-tones.min.css](css/cc-ral-tones.min.css)
+* download [css/bc-ral-tones.min.css](css/bc-ral-tones.min.css)
 * put the downloaded files into {your-css-dir}
 * open your html-file and add between ```<head>``` and ```</head>```
 ```html
-<link rel="stylesheet" href="{your-css-dir}/c-ral-tones.css"> <!-- for text-color -->
-<link rel="stylesheet" href="{your-css-dir}/bg-ral-tones.css"> <!-- for background-color -->
+<link rel="stylesheet" href="{your-css-dir}/c-ral-tones.min.css"> <!-- for text-color -->
+<link rel="stylesheet" href="{your-css-dir}/bg-ral-tones.min.css"> <!-- for background-color -->
+<link rel="stylesheet" href="{your-css-dir}/cc-ral-tones.min.css"> <!-- for caret-color -->
+<link rel="stylesheet" href="{your-css-dir}/bc-ral-tones.min.css"> <!-- for border-color -->
 ```
 now you can use the ral tones at your css file for define background-color or text-color by using classes
 ```html
 <div class="bg2008">this div has the background color ral2008</div>
 ```
 **OR**
-use at your html for setup color
 ```html
 <div class="c2008">this div has the text color ral2008</div>
+```
+**OR**
+```html
+<div class="bc2008" style="border-width:1px;border-style:solid;">this div has a border with color ral2008</div>
+```
+**OR**
+```html
+<input class="cc2008" value="this input has a carnet-color ral2008">
 ```
 **OR**
 you can also combine the classes like
