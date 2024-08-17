@@ -86,7 +86,7 @@ now you can use the ral tones at your css file for define background-color or te
 **OR**
 you can also combine the classes like
 ```html
-<div class="c7021 bg1012">this div has the text color ral7021 and background color ral1012</div>
+<div class="color7021 bgcolor1012">this div has the text color ral7021 and background color ral1012</div>
 ```
 ## licensing
 RAL-Tones-to-CSS © 2024 by Sven Minio is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/ This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.
