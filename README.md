@@ -7,7 +7,7 @@ The hex codes used in codes.min.css are only approximations of the RAL tones. RA
 ## howto use
 open your css and write at the beginning of the file
 ```css
-@import url("https://cdn.statically.io/gh/k37z3r/RAL-to-HEX-RGB-HSL-HWB-CMYK-NCOL-XYZ-Lab-xyY-LCh-HTML-CSS-Colorname/main/samples/codes.min.css");
+@import url("https://cdn.statically.io/gh/k37z3r/RAL-to-HEX-RGB-HSL-HWB-CMYK-NCOL-XYZ-Lab-xyY-LCh-HTML-CSS-Colorname/main/css/ral-tones.min.css");
 ```
 now you can use the ral tones at your css file e.g. as background-color, background, color. write at your css code like
 ```css
