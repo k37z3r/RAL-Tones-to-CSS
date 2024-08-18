@@ -1,0 +1,742 @@
+/*
+RAL-Tones-to-CSS © 2024 by Sven Minio is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+*/
+@import url(ral-tones.css);
+.accentcolor1000 {
+    accent-color: var(--ral1000);
+}
+.accentcolor1001 {
+    accent-color: var(--ral1001);
+}
+.accentcolor1002 {
+    accent-color: var(--ral1002);
+}
+.accentcolor1003 {
+    accent-color: var(--ral1003);
+}
+.accentcolor1004 {
+    accent-color: var(--ral1004);
+}
+.accentcolor1005 {
+    accent-color: var(--ral1005);
+}
+.accentcolor1006 {
+    accent-color: var(--ral1006);
+}
+.accentcolor1007 {
+    accent-color: var(--ral1007);
+}
+.accentcolor1011 {
+    accent-color: var(--ral1011);
+}
+.accentcolor1012 {
+    accent-color: var(--ral1012);
+}
+.accentcolor1013 {
+    accent-color: var(--ral1013);
+}
+.accentcolor1014 {
+    accent-color: var(--ral1014);
+}
+.accentcolor1015 {
+    accent-color: var(--ral1015);
+}
+.accentcolor1016 {
+    accent-color: var(--ral1016);
+}
+.accentcolor1017 {
+    accent-color: var(--ral1017);
+}
+.accentcolor1018 {
+    accent-color: var(--ral1018);
+}
+.accentcolor1019 {
+    accent-color: var(--ral1019);
+}
+.accentcolor1020 {
+    accent-color: var(--ral1020);
+}
+.accentcolor1021 {
+    accent-color: var(--ral1021);
+}
+.accentcolor1022 {
+    accent-color: var(--ral1022);
+}
+.accentcolor1023 {
+    accent-color: var(--ral1023);
+}
+.accentcolor1024 {
+    accent-color: var(--ral1024);
+}
+.accentcolor1026 {
+    accent-color: var(--ral1026);
+}
+.accentcolor1027 {
+    accent-color: var(--ral1027);
+}
+.accentcolor1028 {
+    accent-color: var(--ral1028);
+}
+.accentcolor1032 {
+    accent-color: var(--ral1032);
+}
+.accentcolor1033 {
+    accent-color: var(--ral1033);
+}
+.accentcolor1034 {
+    accent-color: var(--ral1034);
+}
+.accentcolor1035 {
+    accent-color: var(--ral1035);
+}
+.accentcolor1036 {
+    accent-color: var(--ral1036);
+}
+.accentcolor1037 {
+    accent-color: var(--ral1037);
+}
+.accentcolor1039 {
+    accent-color: var(--ral1039);
+}
+.accentcolor1040 {
+    accent-color: var(--ral1040);
+}
+.accentcolor2000 {
+    accent-color: var(--ral2000);
+}
+.accentcolor2001 {
+    accent-color: var(--ral2001);
+}
+.accentcolor2002 {
+    accent-color: var(--ral2002);
+}
+.accentcolor2003 {
+    accent-color: var(--ral2003);
+}
+.accentcolor2004 {
+    accent-color: var(--ral2004);
+}
+.accentcolor2005 {
+    accent-color: var(--ral2005);
+}
+.accentcolor2006 {
+    accent-color: var(--ral2006);
+}
+.accentcolor2007 {
+    accent-color: var(--ral2007);
+}
+.accentcolor2008 {
+    accent-color: var(--ral2008);
+}
+.accentcolor2009 {
+    accent-color: var(--ral2009);
+}
+.accentcolor2010 {
+    accent-color: var(--ral2010);
+}
+.accentcolor2011 {
+    accent-color: var(--ral2011);
+}
+.accentcolor2012 {
+    accent-color: var(--ral2012);
+}
+.accentcolor2013 {
+    accent-color: var(--ral2013);
+}
+.accentcolor2017 {
+    accent-color: var(--ral2017);
+}
+.accentcolor3000 {
+    accent-color: var(--ral3000);
+}
+.accentcolor3001 {
+    accent-color: var(--ral3001);
+}
+.accentcolor3002 {
+    accent-color: var(--ral3002);
+}
+.accentcolor3003 {
+    accent-color: var(--ral3003);
+}
+.accentcolor3004 {
+    accent-color: var(--ral3004);
+}
+.accentcolor3005 {
+    accent-color: var(--ral3005);
+}
+.accentcolor3007 {
+    accent-color: var(--ral3007);
+}
+.accentcolor3009 {
+    accent-color: var(--ral3009);
+}
+.accentcolor3011 {
+    accent-color: var(--ral3011);
+}
+.accentcolor3012 {
+    accent-color: var(--ral3012);
+}
+.accentcolor3013 {
+    accent-color: var(--ral3013);
+}
+.accentcolor3014 {
+    accent-color: var(--ral3014);
+}
+.accentcolor3015 {
+    accent-color: var(--ral3015);
+}
+.accentcolor3016 {
+    accent-color: var(--ral3016);
+}
+.accentcolor3017 {
+    accent-color: var(--ral3017);
+}
+.accentcolor3018 {
+    accent-color: var(--ral3018);
+}
+.accentcolor3019 {
+    accent-color: var(--ral3019);
+}
+.accentcolor3020 {
+    accent-color: var(--ral3020);
+}
+.accentcolor3022 {
+    accent-color: var(--ral3022);
+}
+.accentcolor3024 {
+    accent-color: var(--ral3024);
+}
+.accentcolor3026 {
+    accent-color: var(--ral3026);
+}
+.accentcolor3027 {
+    accent-color: var(--ral3027);
+}
+.accentcolor3028 {
+    accent-color: var(--ral3028);
+}
+.accentcolor3030 {
+    accent-color: var(--ral3030);
+}
+.accentcolor3031 {
+    accent-color: var(--ral3031);
+}
+.accentcolor3032 {
+    accent-color: var(--ral3032);
+}
+.accentcolor3033 {
+    accent-color: var(--ral3033);
+}
+.accentcolor4000 {
+    accent-color: var(--ral4000);
+}
+.accentcolor4001 {
+    accent-color: var(--ral4001);
+}
+.accentcolor4002 {
+    accent-color: var(--ral4002);
+}
+.accentcolor4003 {
+    accent-color: var(--ral4003);
+}
+.accentcolor4004 {
+    accent-color: var(--ral4004);
+}
+.accentcolor4005 {
+    accent-color: var(--ral4005);
+}
+.accentcolor4006 {
+    accent-color: var(--ral4006);
+}
+.accentcolor4007 {
+    accent-color: var(--ral4007);
+}
+.accentcolor4008 {
+    accent-color: var(--ral4008);
+}
+.accentcolor4009 {
+    accent-color: var(--ral4009);
+}
+.accentcolor4010 {
+    accent-color: var(--ral4010);
+}
+.accentcolor4011 {
+    accent-color: var(--ral4011);
+}
+.accentcolor4012 {
+    accent-color: var(--ral4012);
+}
+.accentcolor5000 {
+    accent-color: var(--ral5000);
+}
+.accentcolor5001 {
+    accent-color: var(--ral5001);
+}
+.accentcolor5002 {
+    accent-color: var(--ral5002);
+}
+.accentcolor5003 {
+    accent-color: var(--ral5003);
+}
+.accentcolor5004 {
+    accent-color: var(--ral5004);
+}
+.accentcolor5005 {
+    accent-color: var(--ral5005);
+}
+.accentcolor5007 {
+    accent-color: var(--ral5007);
+}
+.accentcolor5008 {
+    accent-color: var(--ral5008);
+}
+.accentcolor5009 {
+    accent-color: var(--ral5009);
+}
+.accentcolor5010 {
+    accent-color: var(--ral5010);
+}
+.accentcolor5011 {
+    accent-color: var(--ral5011);
+}
+.accentcolor5012 {
+    accent-color: var(--ral5012);
+}
+.accentcolor5013 {
+    accent-color: var(--ral5013);
+}
+.accentcolor5014 {
+    accent-color: var(--ral5014);
+}
+.accentcolor5015 {
+    accent-color: var(--ral5015);
+}
+.accentcolor5016 {
+    accent-color: var(--ral5016);
+}
+.accentcolor5017 {
+    accent-color: var(--ral5017);
+}
+.accentcolor5018 {
+    accent-color: var(--ral5018);
+}
+.accentcolor5019 {
+    accent-color: var(--ral5019);
+}
+.accentcolor5020 {
+    accent-color: var(--ral5020);
+}
+.accentcolor5021 {
+    accent-color: var(--ral5021);
+}
+.accentcolor5022 {
+    accent-color: var(--ral5022);
+}
+.accentcolor5023 {
+    accent-color: var(--ral5023);
+}
+.accentcolor5024 {
+    accent-color: var(--ral5024);
+}
+.accentcolor5025 {
+    accent-color: var(--ral5025);
+}
+.accentcolor5026 {
+    accent-color: var(--ral5026);
+}
+.accentcolor6000 {
+    accent-color: var(--ral6000);
+}
+.accentcolor6001 {
+    accent-color: var(--ral6001);
+}
+.accentcolor6002 {
+    accent-color: var(--ral6002);
+}
+.accentcolor6003 {
+    accent-color: var(--ral6003);
+}
+.accentcolor6004 {
+    accent-color: var(--ral6004);
+}
+.accentcolor6005 {
+    accent-color: var(--ral6005);
+}
+.accentcolor6006 {
+    accent-color: var(--ral6006);
+}
+.accentcolor6007 {
+    accent-color: var(--ral6007);
+}
+.accentcolor6008 {
+    accent-color: var(--ral6008);
+}
+.accentcolor6009 {
+    accent-color: var(--ral6009);
+}
+.accentcolor6010 {
+    accent-color: var(--ral6010);
+}
+.accentcolor6011 {
+    accent-color: var(--ral6011);
+}
+.accentcolor6012 {
+    accent-color: var(--ral6012);
+}
+.accentcolor6013 {
+    accent-color: var(--ral6013);
+}
+.accentcolor6014 {
+    accent-color: var(--ral6014);
+}
+.accentcolor6015 {
+    accent-color: var(--ral6015);
+}
+.accentcolor6016 {
+    accent-color: var(--ral6016);
+}
+.accentcolor6017 {
+    accent-color: var(--ral6017);
+}
+.accentcolor6018 {
+    accent-color: var(--ral6018);
+}
+.accentcolor6019 {
+    accent-color: var(--ral6019);
+}
+.accentcolor6020 {
+    accent-color: var(--ral6020);
+}
+.accentcolor6021 {
+    accent-color: var(--ral6021);
+}
+.accentcolor6022 {
+    accent-color: var(--ral6022);
+}
+.accentcolor6023 {
+    accent-color: var(--ral6023);
+}
+.accentcolor6024 {
+    accent-color: var(--ral6024);
+}
+.accentcolor6025 {
+    accent-color: var(--ral6025);
+}
+.accentcolor6026 {
+    accent-color: var(--ral6026);
+}
+.accentcolor6027 {
+    accent-color: var(--ral6027);
+}
+.accentcolor6028 {
+    accent-color: var(--ral6028);
+}
+.accentcolor6029 {
+    accent-color: var(--ral6029);
+}
+.accentcolor6030 {
+    accent-color: var(--ral6030);
+}
+.accentcolor6031 {
+    accent-color: var(--ral6031);
+}
+.accentcolor6032 {
+    accent-color: var(--ral6032);
+}
+.accentcolor6033 {
+    accent-color: var(--ral6033);
+}
+.accentcolor6034 {
+    accent-color: var(--ral6034);
+}
+.accentcolor6035 {
+    accent-color: var(--ral6035);
+}
+.accentcolor6036 {
+    accent-color: var(--ral6036);
+}
+.accentcolor6037 {
+    accent-color: var(--ral6037);
+}
+.accentcolor6038 {
+    accent-color: var(--ral6038);
+}
+.accentcolor6039 {
+    accent-color: var(--ral6039);
+}
+.accentcolor6040 {
+    accent-color: var(--ral6040);
+}
+.accentcolor7000 {
+    accent-color: var(--ral7000);
+}
+.accentcolor7001 {
+    accent-color: var(--ral7001);
+}
+.accentcolor7002 {
+    accent-color: var(--ral7002);
+}
+.accentcolor7003 {
+    accent-color: var(--ral7003);
+}
+.accentcolor7004 {
+    accent-color: var(--ral7004);
+}
+.accentcolor7005 {
+    accent-color: var(--ral7005);
+}
+.accentcolor7006 {
+    accent-color: var(--ral7006);
+}
+.accentcolor7008 {
+    accent-color: var(--ral7008);
+}
+.accentcolor7009 {
+    accent-color: var(--ral7009);
+}
+.accentcolor7010 {
+    accent-color: var(--ral7010);
+}
+.accentcolor7011 {
+    accent-color: var(--ral7011);
+}
+.accentcolor7012 {
+    accent-color: var(--ral7012);
+}
+.accentcolor7013 {
+    accent-color: var(--ral7013);
+}
+.accentcolor7015 {
+    accent-color: var(--ral7015);
+}
+.accentcolor7016 {
+    accent-color: var(--ral7016);
+}
+.accentcolor7017 {
+    accent-color: var(--ral7017);
+}
+.accentcolor7018 {
+    accent-color: var(--ral7018);
+}
+.accentcolor7019 {
+    accent-color: var(--ral7019);
+}
+.accentcolor7020 {
+    accent-color: var(--ral7020);
+}
+.accentcolor7021 {
+    accent-color: var(--ral7021);
+}
+.accentcolor7022 {
+    accent-color: var(--ral7022);
+}
+.accentcolor7023 {
+    accent-color: var(--ral7023);
+}
+.accentcolor7024 {
+    accent-color: var(--ral7024);
+}
+.accentcolor7025 {
+    accent-color: var(--ral7025);
+}
+.accentcolor7026 {
+    accent-color: var(--ral7026);
+}
+.accentcolor7027 {
+    accent-color: var(--ral7027);
+}
+.accentcolor7028 {
+    accent-color: var(--ral7028);
+}
+.accentcolor7030 {
+    accent-color: var(--ral7030);
+}
+.accentcolor7031 {
+    accent-color: var(--ral7031);
+}
+.accentcolor7032 {
+    accent-color: var(--ral7032);
+}
+.accentcolor7033 {
+    accent-color: var(--ral7033);
+}
+.accentcolor7034 {
+    accent-color: var(--ral7034);
+}
+.accentcolor7035 {
+    accent-color: var(--ral7035);
+}
+.accentcolor7036 {
+    accent-color: var(--ral7036);
+}
+.accentcolor7037 {
+    accent-color: var(--ral7037);
+}
+.accentcolor7038 {
+    accent-color: var(--ral7038);
+}
+.accentcolor7039 {
+    accent-color: var(--ral7039);
+}
+.accentcolor7040 {
+    accent-color: var(--ral7040);
+}
+.accentcolor7042 {
+    accent-color: var(--ral7042);
+}
+.accentcolor7043 {
+    accent-color: var(--ral7043);
+}
+.accentcolor7044 {
+    accent-color: var(--ral7044);
+}
+.accentcolor7045 {
+    accent-color: var(--ral7045);
+}
+.accentcolor7046 {
+    accent-color: var(--ral7046);
+}
+.accentcolor7047 {
+    accent-color: var(--ral7047);
+}
+.accentcolor7048 {
+    accent-color: var(--ral7048);
+}
+.accentcolor7050 {
+    accent-color: var(--ral7050);
+}
+.accentcolor8000 {
+    accent-color: var(--ral8000);
+}
+.accentcolor8001 {
+    accent-color: var(--ral8001);
+}
+.accentcolor8002 {
+    accent-color: var(--ral8002);
+}
+.accentcolor8003 {
+    accent-color: var(--ral8003);
+}
+.accentcolor8004 {
+    accent-color: var(--ral8004);
+}
+.accentcolor8007 {
+    accent-color: var(--ral8007);
+}
+.accentcolor8008 {
+    accent-color: var(--ral8008);
+}
+.accentcolor8010 {
+    accent-color: var(--ral8010);
+}
+.accentcolor8011 {
+    accent-color: var(--ral8011);
+}
+.accentcolor8012 {
+    accent-color: var(--ral8012);
+}
+.accentcolor8014 {
+    accent-color: var(--ral8014);
+}
+.accentcolor8015 {
+    accent-color: var(--ral8015);
+}
+.accentcolor8016 {
+    accent-color: var(--ral8016);
+}
+.accentcolor8017 {
+    accent-color: var(--ral8017);
+}
+.accentcolor8019 {
+    accent-color: var(--ral8019);
+}
+.accentcolor8020 {
+    accent-color: var(--ral8020);
+}
+.accentcolor8022 {
+    accent-color: var(--ral8022);
+}
+.accentcolor8023 {
+    accent-color: var(--ral8023);
+}
+.accentcolor8024 {
+    accent-color: var(--ral8024);
+}
+.accentcolor8025 {
+    accent-color: var(--ral8025);
+}
+.accentcolor8026 {
+    accent-color: var(--ral8026);
+}
+.accentcolor8027 {
+    accent-color: var(--ral8027);
+}
+.accentcolor8028 {
+    accent-color: var(--ral8028);
+}
+.accentcolor8029 {
+    accent-color: var(--ral8029);
+}
+.accentcolor8031 {
+    accent-color: var(--ral8031);
+}
+.accentcolor9001 {
+    accent-color: var(--ral9001);
+}
+.accentcolor9002 {
+    accent-color: var(--ral9002);
+}
+.accentcolor9003 {
+    accent-color: var(--ral9003);
+}
+.accentcolor9004 {
+    accent-color: var(--ral9004);
+}
+.accentcolor9005 {
+    accent-color: var(--ral9005);
+}
+.accentcolor9006 {
+    accent-color: var(--ral9006);
+}
+.accentcolor9007 {
+    accent-color: var(--ral9007);
+}
+.accentcolor9010 {
+    accent-color: var(--ral9010);
+}
+.accentcolor9011 {
+    accent-color: var(--ral9011);
+}
+.accentcolor9012 {
+    accent-color: var(--ral9012);
+}
+.accentcolor9013 {
+    accent-color: var(--ral9013);
+}
+.accentcolor9014 {
+    accent-color: var(--ral9014);
+}
+.accentcolor9016 {
+    accent-color: var(--ral9016);
+}
+.accentcolor9017 {
+    accent-color: var(--ral9017);
+}
+.accentcolor9018 {
+    accent-color: var(--ral9018);
+}
+.accentcolor9019 {
+    accent-color: var(--ral9019);
+}
+.accentcolor9020 {
+    accent-color: var(--ral9020);
+}
+.accentcolor9021 {
+    accent-color: var(--ral9021);
+}
+.accentcolor9022 {
+    accent-color: var(--ral9022);
+}
+.accentcolor9023 {
+    accent-color: var(--ral9023);
+}
