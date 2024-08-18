@@ -22,6 +22,17 @@ a list of color tones and the corresponding HEX RGB HSL HWB CMYK NCOL XYZ L*a*b*
 ## infos
 The hex codes used in this Repo are only approximations of the RAL tones. you can look up which ral tones are supported in the [csv](csv) / [html](html) / [css](css) / [json](json) folders. the data sets are identical and only adapted to the corresponding file format
 
+> [!TIP]
+> ## the easiest way to use RAL-Tones-to-CSS is with my jquery-plugin
+> write in head-section after jquery
+> ```html
+> <script src="https://cdn.jsdelivr.net/gh/k37z3r/RAL-Tones-to-CSS@main/js/ral-tones.min.js"></script>
+> ```
+> now you can use it like:
+> ```js
+> $(`#myDiv`).ral({color:"ral9021", backgroundColor:"ral4000", border: "1px solid ral1016"});
+> ```
+
 ## howto use at CSS
 * open your css
 * write at the top of your file
