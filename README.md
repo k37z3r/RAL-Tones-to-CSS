@@ -77,20 +77,44 @@ $(document).ready(function() {
 });
 ```
 ## howto use direct at HTML
+if you need all 10 css-class-files
 * download [css/ral-tones.min.css](css/ral-tones.min.css)
-* download [css/classes/c-ral-tones.min.css](css/classes/c-ral-tones.min.css)
-* download [css/classes/bg-ral-tones.min.css](css/classes/bg-ral-tones.min.css)
-* download [css/classes/cc-ral-tones.min.css](css/classes/cc-ral-tones.min.css)
-* download [css/classes/bc-ral-tones.min.css](css/classes/bc-ral-tones.min.css)
+* download [css/classes/all-ral-tones.min.css](css/classes/all-ral-tones.min.css)
 * put the downloaded files into {your-css-dir}
 * open your html-file and add between ```<head>``` and ```</head>```
 ```html
-<link rel="stylesheet" href="{your-css-dir}/ral-tones.min.css"> <!-- for text-color -->
-<link rel="stylesheet" href="{your-css-dir}/c-ral-tones.min.css"> <!-- for text-color -->
-<link rel="stylesheet" href="{your-css-dir}/bg-ral-tones.min.css"> <!-- for background-color -->
-<link rel="stylesheet" href="{your-css-dir}/cc-ral-tones.min.css"> <!-- for caret-color -->
-<link rel="stylesheet" href="{your-css-dir}/bc-ral-tones.min.css"> <!-- for border-color -->
+<link rel="stylesheet" href="{your-css-dir}/ral-tones.min.css"> <!-- for ral-tones -->
+<link rel="stylesheet" href="{your-css-dir}/all-ral-tones.min.css"> <!-- for all in one class file -->
 ```
+
+otherwise
+* download [css/ral-tones.min.css](css/ral-tones.min.css)
+* download [css/classes/ac-ral-tones.min.css](css/classes/ac-ral-tones.min.css)
+* download [css/classes/bbc-ral-tones.min.css](css/classes/bbc-ral-tones.min.css)
+* download [css/classes/bc-ral-tones.min.css](css/classes/bc-ral-tones.min.css)
+* download [css/classes/bg-ral-tones.min.css](css/classes/bg-ral-tones.min.css)
+* download [css/classes/blc-ral-tones.min.css](css/classes/blc-ral-tones.min.css)
+* download [css/classes/brc-ral-tones.min.css](css/classes/brc-ral-tones.min.css)
+* download [css/classes/btc-ral-tones.min.css](css/classes/btc-ral-tones.min.css)
+* download [css/classes/c-ral-tones.min.css](css/classes/c-ral-tones.min.css)
+* download [css/classes/cc-ral-tones.min.css](css/classes/cc-ral-tones.min.css)
+* download [css/classes/oc-ral-tones.min.css](css/classes/oc-ral-tones.min.css)
+* put the downloaded files into {your-css-dir}
+* open your html-file and add between ```<head>``` and ```</head>```
+```html
+<link rel="stylesheet" href="{your-css-dir}/ral-tones.min.css"> <!-- for ral-tones -->
+<link rel="stylesheet" href="{your-css-dir}/ac-ral-tones.min.css"> <!-- for accent-color -->
+<link rel="stylesheet" href="{your-css-dir}/bbc-ral-tones.min.css"> <!-- for border-bottom-color -->
+<link rel="stylesheet" href="{your-css-dir}/bc-ral-tones.min.css"> <!-- for border-color -->
+<link rel="stylesheet" href="{your-css-dir}/bg-ral-tones.min.css"> <!-- for background-color -->
+<link rel="stylesheet" href="{your-css-dir}/blc-ral-tones.min.css"> <!-- for border-left-color -->
+<link rel="stylesheet" href="{your-css-dir}/brc-ral-tones.min.css"> <!-- for border-right-color -->
+<link rel="stylesheet" href="{your-css-dir}/btc-ral-tones.min.css"> <!-- for border-top-color -->
+<link rel="stylesheet" href="{your-css-dir}/c-ral-tones.min.css"> <!-- for text-color -->
+<link rel="stylesheet" href="{your-css-dir}/cc-ral-tones.min.css"> <!-- for caret-color -->
+<link rel="stylesheet" href="{your-css-dir}/oc-ral-tones.min.css"> <!-- for outline-color -->
+```
+
 now you can use the ral tones at your css file for define background-color or text-color by using classes
 ```html
 <div class="bgcolor2008">this div has the background color ral2008</div>
@@ -101,11 +125,49 @@ now you can use the ral tones at your css file for define background-color or te
 ```
 **OR**
 ```html
+<div class="outlinecolor2008" style="outline-width:1px;outline-style:solid;">this div has a border with color ral2008</div>
+```
+**OR**
+```html
 <div class="bordercolor2008" style="border-width:1px;border-style:solid;">this div has a border with color ral2008</div>
 ```
 **OR**
 ```html
-<input class="caretcolor2008" value="this input has a caret-color ral2008">
+<div class="borderleftcolor2008" style="border-left-width:1px;border-style:solid;">this div has a left border with color ral2008</div>
+```
+**OR**
+```html
+<div class="bordertopcolor2008" style="border-top-width:1px;border-style:solid;">this div has a top border with color ral2008</div>
+```
+**OR**
+```html
+<div class="borderrightcolor2008" style="border-right-width:1px;border-style:solid;">this div has a right border with color ral2008</div>
+```
+**OR**
+```html
+<div class="borderbottomcolor2008" style="border-bottom-width:1px;border-style:solid;">this div has a bottom border with color ral2008</div>
+```
+**OR**
+```html
+<input class="caretcolor2008"><!-- this input has a caret-color ral2008 -->
+<input class="caretcolor2008" type="date"><!-- this input has a caret-color ral2008 -->
+<input class="caretcolor2008" type="datetime-local"><!-- this input has a caret-color ral2008 -->
+<input class="caretcolor2008" type="email"><!-- this input has a caret-color ral2008 -->
+<input class="caretcolor2008" type="month"><!-- this input has a caret-color ral2008 -->
+<input class="caretcolor2008" type="number"><!-- this input has a caret-color ral2008 -->
+<input class="caretcolor2008" type="password"><!-- this input has a caret-color ral2008 -->
+<input class="caretcolor2008" type="search"><!-- this input has a caret-color ral2008 -->
+<input class="caretcolor2008" type="tel"><!-- this input has a caret-color ral2008 -->
+<input class="caretcolor2008" type="time"><!-- this input has a caret-color ral2008 -->
+<input class="caretcolor2008" type="url"><!-- this input has a caret-color ral2008 -->
+<input class="caretcolor2008" type="week"><!-- this input has a caret-color ral2008 -->
+```
+**OR**
+```html
+<input class="accentcolor" type="checkbox"><!-- this input has a accent-color ral2008 -->
+<input class="accentcolor" type="radio"><!-- this input has a accent-color ral2008 -->
+<input class="accentcolor" type="range"><!-- this input has a accent-color ral2008 -->
+<progress class="accentcolor"><!-- this input has a accent-color ral2008 -->
 ```
 **OR**
 you can also combine the classes like
