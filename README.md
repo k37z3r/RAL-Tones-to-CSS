@@ -9,6 +9,7 @@
 ![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/k37z3r/RAL-Tones-to-CSS/csv?label=CSV-files)
 ![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/k37z3r/RAL-Tones-to-CSS/html?label=HTML-files)
 ![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/k37z3r/RAL-Tones-to-CSS/php?label=PHP-files)
+![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/k37z3r/RAL-Tones-to-CSS/js?label=JS-files)
 ![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hd/k37z3r/RAL-Tones-to-CSS)
 ![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hw/k37z3r/RAL-Tones-to-CSS)
 ![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/k37z3r/RAL-Tones-to-CSS)
