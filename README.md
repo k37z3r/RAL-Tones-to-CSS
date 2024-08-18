@@ -78,13 +78,14 @@ $(document).ready(function() {
 ```
 ## howto use direct at HTML
 * download [css/ral-tones.min.css](css/ral-tones.min.css)
-* download [css/c-ral-tones.min.css](css/c-ral-tones.min.css)
-* download [css/bg-ral-tones.min.css](css/bg-ral-tones.min.css)
-* download [css/cc-ral-tones.min.css](css/cc-ral-tones.min.css)
-* download [css/bc-ral-tones.min.css](css/bc-ral-tones.min.css)
+* download [css/classes/c-ral-tones.min.css](css/classes/c-ral-tones.min.css)
+* download [css/classes/bg-ral-tones.min.css](css/classes/bg-ral-tones.min.css)
+* download [css/classes/cc-ral-tones.min.css](css/classes/cc-ral-tones.min.css)
+* download [css/classes/bc-ral-tones.min.css](css/classes/bc-ral-tones.min.css)
 * put the downloaded files into {your-css-dir}
 * open your html-file and add between ```<head>``` and ```</head>```
 ```html
+<link rel="stylesheet" href="{your-css-dir}/ral-tones.min.css"> <!-- for text-color -->
 <link rel="stylesheet" href="{your-css-dir}/c-ral-tones.min.css"> <!-- for text-color -->
 <link rel="stylesheet" href="{your-css-dir}/bg-ral-tones.min.css"> <!-- for background-color -->
 <link rel="stylesheet" href="{your-css-dir}/cc-ral-tones.min.css"> <!-- for caret-color -->
