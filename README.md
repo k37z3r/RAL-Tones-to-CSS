@@ -18,7 +18,7 @@
 ![GitHub User's stars](https://img.shields.io/github/stars/k37z3r?label=my%20Stars)
 
 
-a list of color tones and the corresponding HEX RGB HSL HWB CMYK NCOL XYZ L*a*b* xyY LCh HTML/CSS Colorname
+a list of color tones and the corresponding HEX RGB HSL HWB HSV CMYK NCOL XYZ L*a*b* xyY LCh HTML/CSS Colorname
 
 ## infos
 The hex codes used in this Repo are only approximations of the RAL tones. you can look up which ral tones are supported in the [csv](csv) / [html](html) / [css](css) / [json](json) folders. the data sets are identical and only adapted to the corresponding file format
