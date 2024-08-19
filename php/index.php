@@ -2,6 +2,33 @@
 /*
 RAL-Tones-to-CSS © 2024 by Sven Minio is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
 */
+function linearize($color) {
+    if ($color <= 0.04045)
+        return $color / 12.92;
+    else
+        return pow(($color + 0.055) / 1.055, 2.4);
+}
+function normalize($r, $g, $b){
+    $r /= 255;
+    $g /= 255;
+    $b /= 255;
+    return array($r, $g, $b);
+}
+function calcHue($r, $g, $b){
+    $max = max($r, $g, $b);
+    $min = min($r, $g, $b);
+    $d = $max - $min;
+    $h = 0;
+    if ($d != 0 && $max == $r && $g >= $b)
+        $h = 60 * (($g - $b) / $d) + 0;
+    elseif ($d != 0 && $max == $r && $g < $b)
+        $h = 60 * ((($g - $b) / $d) + 6);
+    elseif ($d != 0 && $max == $g)
+        $h = 60 * ((($b - $r) / $d) + 2);
+    elseif ($d != 0 && $max == $b)
+        $h = 60 * ((($r - $g) / $d) + 4);
+    return $h;
+}
 function hex2rgb($hex) {
     $hex = str_replace('#', '', $hex);
     if (strlen($hex) == 3) {
@@ -12,101 +39,85 @@ function hex2rgb($hex) {
     $b = hexdec(substr($hex, 4, 2));
     return array($r, $g, $b);
 }
-function rgbToHsl($r, $g, $b) {
-    $r /= 255;
-    $g /= 255;
-    $b /= 255;
+function rgbToHsl($r, $g, $b, $dec = 0) {
+    list ($r, $g, $b) = normalize($r, $g, $b);
     $max = max($r, $g, $b);
     $min = min($r, $g, $b);
     $l = ($max + $min) / 2;
-    if ($max == $min)
+    $d = $max - $min;
+    $h = calcHue($r, $g, $b);
+    if($d == 0)
         $s = 0;
-    else {
-        $d = $max - $min;
-        $s = $d / (1 - abs(2 * $l - 1));
-    }
-    if ($max == $min)
-        $h = 0;
-    else {
-        if ($max == $r) 
-            $h = ($g - $b) / $d;
-        elseif ($max == $g)
-            $h = ($b - $r) / $d + 2;
-        else
-            $h = ($r - $g) / $d + 4;
-        $h *= 60;
-        if ($h < 0)
-            $h += 360;
-    }
-    $h = round($h);
-    $s = round($s * 100);
-    $l = round($l * 100);
+    else
+        $s = $d / ( 1 - abs( 2 * $l - 1 ) );
+    $h = round($h, $dec);
+    $s = round($s * 100, $dec);
+    $l = round($l * 100, $dec);
     return array($h, $s, $l);
 }
-function rgbToHwb($r, $g, $b) {
-    $r /= 255;
-    $g /= 255;
-    $b /= 255;
+function rgbToHwb($r, $g, $b, $dec = 0) {
+    list ($r, $g, $b) = normalize($r, $g, $b);
     $max = max($r, $g, $b);
     $min = min($r, $g, $b);
-    $w = ($max + $min) / 2;
-    if ($max == $min) {
-        return array(0, round($w * 100), round($w * 100));
-    }
-    $d = $max - $min;
-    $s = $d / (1 - abs(2 * $w - 1));
-    if ($max == $r)
-        $h = fmod(($g - $b) / $d + ($g < $b ? 6 : 0), 6);
-    else if ($max == $g)
-        $h = ($b - $r) / $d + 2;
-    else
-        $h = ($r - $g) / $d + 4;
-    $h = round($h * 60);
-    $w = round($w * 100);
-    $s = round($s * 100);
-    return array($h, $w, $s);
+    $w = $min;
+    $k = 1 - $max;
+    $h = calcHue($r, $g, $b);
+    $h = round($h, $dec);
+    $w = round($w * 100, $dec);
+    $b = round($k * 100, $dec);
+    return array($h, $w, $b);
 }
-function rgbToCmyk($r, $g, $b){
-    $r /= 255;
-    $g /= 255;
-    $b /= 255;
+function rgbToCmyk($r, $g, $b, $dec = 0){
+    list ($r, $g, $b) = normalize($r, $g, $b);
     $k = 1 - max($r, $g, $b);
     $c = (1 - $r - $k) / (1 - $k);
     $m = (1 - $g - $k) / (1 - $k);
     $y = (1 - $b - $k) / (1 - $k);
-    $c = round($c * 100);
-    $m = round($m * 100);
-    $y = round($y * 100);
-    $k = round($k * 100);
+    $c = round($c * 100, $dec);
+    $m = round($m * 100, $dec);
+    $y = round($y * 100, $dec);
+    $k = round($k * 100, $dec);
     return array($c, $m, $y, $k);
 }
-function rgbToNcol($r, $g, $b){
-    $hwb = rgbToHwb($r, $g, $b);
+function rgbToHsv($r, $g, $b, $dec = 0){
+    list ($r, $g, $b) = normalize($r, $g, $b);
+    $max = max($r, $g, $b);
+    $min = min($r, $g, $b);
+    $d = $max - $min;
+    $v = $max;
+    $h = calcHue($r, $g, $b);
+    if ($d == 0)
+        $s = 0;
+    else
+        $s = $d / $max;
+   $h = round($h, $dec);
+   $s = round($s * 100, $dec);
+   $v = round($v * 100, $dec);
+   return array($h, $s, $v);
+}
+function rgbToNcol($r, $g, $b, $dec = 0){
+    $hwb = rgbToHwb($r, $g, $b, 8);
     $h = $hwb[0];
     $w = $hwb[1];
     $b = $hwb[2];
     if ($h < 60) 
-        $ncol = "R".round($h / 0.6);
+        $ncol = "R".round($h / 0.6, $dec);
     elseif ($h < 120)
-        $ncol = "Y".round(($h - 60) / 0.6);
+        $ncol = "Y".round(($h - 60) / 0.6, $dec);
     elseif ($h < 180)
-        $ncol = "G".round(($h - 120) / 0.6);
+        $ncol = "G".round(($h - 120) / 0.6, $dec);
     elseif ($h < 240)
-        $ncol = "C".round(($h - 180) / 0.6);
+        $ncol = "C".round(($h - 180) / 0.6, $dec);
     elseif ($h < 300)
-        $ncol = "B".round(($h - 240) / 0.6);
+        $ncol = "B".round(($h - 240) / 0.6, $dec);
     elseif ($h < 360)
-        $ncol = "M".round(($h - 300) / 0.6);
+        $ncol = "M".round(($h - 300) / 0.6, $dec);
+    $w = round($w, $dec);
+    $b = round($b, $dec);
     return array($ncol, $w, $b);
 }
-function linearize($color) {
-    if ($color <= 0.04045)
-        return $color / 12.92;
-    else
-        return pow(($color + 0.055) / 1.055, 2.4);
-}
-function rgbToLab($r, $g, $b) {
-    $xyz = rgbToXYZ($r, $g, $b);
+function rgbToLab($r, $g, $b, $dec = 2) {
+    $xyz = rgbToXYZ($r, $g, $b, 8);
     $X = $xyz[0];
     $Y = $xyz[1];
     $Z = $xyz[2];
@@ -119,55 +130,53 @@ function rgbToLab($r, $g, $b) {
     $L = (116 * $y) - 16;
     $a = 500 * ($x - $y);
     $b = 200 * ($y - $z);
-    $L = number_format($L, 2, ".");
-    $a = number_format($a, 2, ".");
-    $b = number_format($b, 2, ".");
+    $L = round($L, $dec);
+    $a = round($a, $dec);
+    $b = round($b, $dec);
     return array($L, $a, $b);
 }
-function rgbToXYZ($r, $g, $b) {
-    $r /= 255;
-    $g /= 255;
-    $b /= 255;
+function rgbToXYZ($r, $g, $b, $dec = 2) {
+    list ($r, $g, $b) = normalize($r, $g, $b);
     $R = linearize($r);
     $G = linearize($g);
     $B = linearize($b);
     $X = $R * 0.4124 + $G * 0.3576 + $B * 0.1805;
     $Y = $R * 0.2126 + $G * 0.7152 + $B * 0.0722;
     $Z = $R * 0.0193 + $G * 0.1192 + $B * 0.9505;
-    $X = number_format($X, 2, ".");
-    $Y = number_format($Y, 2, ".");
-    $Z = number_format($Z, 2, ".");
+    $X = round($X, $dec);
+    $Y = round($Y, $dec);
+    $Z = round($Z, $dec);
     return array($X, $Y, $Z);
 }
-function rgbToxyY($r, $g, $b){
-    $xyz = rgbToXYZ($r, $g, $b);
+function rgbToxyY($r, $g, $b, $dec = 2){
+    $xyz = rgbToXYZ($r, $g, $b, 8);
     $X = $xyz[0];
     $Y = $xyz[1];
     $Z = $xyz[2];
     $x = $X / ($X + $Y + $Z + 0.00001);
     $y = $Y / ($X + $Y + $Z + 0.00001);
-    $x = number_format($x, 2, ".");
-    $y = number_format($y, 2, ".");
-    $Y = number_format($Y, 2, ".");
+    $x = round($x, $dec);
+    $y = round($y, $dec);
+    $Y = round($Y, $dec);
     return array($x, $y, $Y);
 }
-function rgbToLch($r, $g, $b) {
-    $xyz = rgbToXYZ($r, $g, $b);
+function rgbToLch($r, $g, $b, $dec = 2) {
+    $xyz = rgbToXYZ($r, $g, $b, 8);
     $X = $xyz[0];
     $Y = $xyz[1];
     $Z = $xyz[2];
-    $xy = rgbToxyY($r, $g, $b);
+    $xy = rgbToxyY($r, $g, $b, 8);
     $x = $xy[0];
     $y = $xy[1];
     $L = 116 * pow($Y, 1/3) - 16;
-    $C = sqrt(pow($x - 0.3333, 2) + pow($y - 0.3333, 2)) * sqrt(pow(25, 2) / (pow($x - 0.3333, 2) + pow($y - 0.3333, 2) + 3 * pow(0.3333, 2)));
-    $h = atan2($y - 0.3333, $x - 0.3333);
+    $C = sqrt(pow($x - (1 / 3), 2) + pow($y - (1 / 3), 2)) * sqrt(pow(25, 2) / (pow($x - (1 / 3), 2) + pow($y - (1 / 3), 2) + 3 * pow((1 / 3), 2)));
+    $h = atan2($y - (1 / 3), $x - (1 / 3));
     $h = rad2deg($h);
     if ($h < 0)
         $h += 360;
-    $L = number_format($L, 2, ".");
-    $C = number_format($C, 2, ".");
-    $h = number_format($h, 2, ".");
+    $L = round($L, $dec);
+    $C = round($C, $dec);
+    $h = round($h, $dec);
     return array($L, $C, $h);
 }
 function hexToName($hex){
@@ -249,6 +258,7 @@ $str = '<html>
                     <th>RGB</th>
                     <th>HSL</th>
                     <th>HWB</th>
+                    <th>HSV</th>
                     <th>CMYK</th>
                     <th>NCOL</th>
                     <th>XYZ</th>
@@ -265,6 +275,7 @@ foreach($ral as $key => $value){
     $rgb = hex2rgb($value);
     $hsl = rgbToHsl($rgb[0], $rgb[1], $rgb[2]);
     $hwb = rgbToHwb($rgb[0], $rgb[1], $rgb[2]);
+    $hsv = rgbToHsv($rgb[0], $rgb[1], $rgb[2]);
     $cmyk = rgbToCmyk($rgb[0], $rgb[1], $rgb[2]);
     $ncol = rgbToNcol($rgb[0], $rgb[1], $rgb[2]);
     $xyz = rgbToXYZ($rgb[0], $rgb[1], $rgb[2]);
@@ -278,8 +289,9 @@ foreach($ral as $key => $value){
                     <td>'.$rgb[0].', '.$rgb[1].', '.$rgb[2].'</td>
                     <td>'.$hsl[0].'deg, '.$hsl[1].'%, '.$hsl[2].'%</td>
                     <td>'.$hwb[0].'deg, '.$hwb[1].'%, '.$hwb[2].'%</td>
+                    <td>'.$hsv[0].'deg, '.$hsv[1].'%, '.$hsv[2].'%</td>
                     <td>'.$cmyk[0].', '.$cmyk[1].', '.$cmyk[2].', '.$cmyk[3].'</td>
-                    <td>'.$ncol[0].', '.$ncol[1].', '.$ncol[2].'</td>
+                    <td>'.$ncol[0].', '.$ncol[1].'%, '.$ncol[2].'%</td>
                     <td>'.$xyz[0].', '.$xyz[1].', '.$xyz[2].'</td>
                     <td>'.$lab[0].', '.$lab[1].', '.$lab[2].'</td>
                     <td>'.$xyy[0].', '.$xyy[1].', '.$xyy[2].'</td>
