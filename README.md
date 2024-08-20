@@ -31,7 +31,11 @@ The hex codes used in this Repo are only approximations of the RAL tones. you ca
 > ```
 > now you can use it like:
 > ```js
-> $(`#myDiv`).ral({color:"ral9021", backgroundColor:"ral4000", border: "1px solid ral1016"});
+> ral({properties: value}, colorspace (standard=hex), decimals (standard=0))
+> 
+> $(`#myDiv`).ral({color:"ral9021", backgroundColor:"ral4000", border: "1px solid ral1016"}); /* colorspace is hex */
+> $(`#myDiv`).ral({color:"ral9021", backgroundColor:"ral4000", border: "1px solid ral1016"}, "hsl"); /* colorspace is hsl */
+> $(`#myDiv`).ral({color:"ral9021", backgroundColor:"ral4000", border: "1px solid ral1016"}, "lab", 2); /* colorspace is lab with 2 decimals */
 > ```
 
 ## howto use at CSS
