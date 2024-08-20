@@ -237,7 +237,6 @@ RAL-Tones-to-CSS © 2024 by Sven Minio is licensed under Creative Commons Attrib
                 let newValue = getColorCode(value, dec);
                 result[key] = newValue;
             }
-            console.log(result)
             $(this).css(result);
         });
     };
